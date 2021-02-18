@@ -1,0 +1,151 @@
+#result-page {
+    display: none
+}
+
+#generator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+#quote-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#new-quote-container {
+    width: 40rem;
+    height: 13.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px 45px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6); 
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.6);  
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.6); 
+    -o-box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    transition: background-color 1s;
+}
+
+#mark-container {
+    width: 36.5rem;
+    height: 13rem;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+}
+
+#quote-mark {
+    font-size: 8rem;
+    transition: color 1s;
+}
+
+#quote {
+    padding: 3rem 4rem 0 5rem;
+    font-family: 'Pompiere', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 0.07rem;
+    text-align: center;
+}
+
+#by-container {
+    margin-top: -1.5rem;
+    width: 35rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#by {
+    font-family: 'Pompiere', cursive;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+#new-quote-btn:active {
+    transform: scale(.10);
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #new-quote-container {
+        width: 20rem;
+        height: 19rem;
+    }
+
+    #generator-container {
+        height: 100vh
+    }
+
+    #mark-container {
+        height: 18rem;
+        width: 16.5rem;
+    }
+
+    #quote-mark {
+        font-size: 6rem;
+    }
+
+    #quote {
+        font-size: 1.7rem;
+        padding: 2rem 1.5rem 1rem 1.5rem;
+    }
+
+    #by-container {
+        margin-top: -3rem;
+        width: 18rem;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 767px){
+    #new-quote-container {
+        width: 38rem;
+        height: 14rem; 
+    }
+
+    #mark-container {
+        width: 35rem;
+    }
+
+    #quote-mark {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 1400px) {
+ 
+    #title-container img {
+        margin-top: 1.5rem;
+        width: 43rem;
+        height: 19rem;
+    }
+
+    #title-container h2 {
+        font-size: 2.5rem;
+    }
+
+    #quote-container {
+        margin-top: 2rem;
+        width: 40rem;
+        height: 13rem;
+    }
+
+    #quote-container h2 {
+        font-size: 3rem;
+    }
+}
